@@ -1,0 +1,18 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns1.hello.com. root.hello.com. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns1.hello.com.
+10	IN	PTR	page1.hello.com.
+10	IN	PTR	page1.bye.com.
+10	IN	PTR	www.hello.com.
+10	IN	PTR	lec.hello.com.
+10	IN	PTR	www.bye.com.
+10	IN	PTR	stu.bye.com.
